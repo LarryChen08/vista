@@ -8,6 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    var body: some View {
+        TabView {
+            CameraView()
+                .tabItem {
+                    Image(systemName: "camera")
+                    Text("Camera")
+                }
+            
+            MapViewController()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+        }
+    }
+}
+
+struct CameraView: View {
     @State private var showImagePicker = false
     @State private var selectedImage: UIImage?
     @State private var descriptionText: String?
@@ -67,5 +85,9 @@ struct ContentView: View {
             }
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
 
