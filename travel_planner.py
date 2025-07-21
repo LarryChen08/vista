@@ -214,7 +214,7 @@ def main():
     Example usage of the TravelPlannerWorkflow
     """
     # Initialize workflow (replace with your actual API key)
-    api_key = os.getenv("QIANWEN_API_KEY", 'sk-3ca7afbf217f4f7aa53983cd9544ff24')
+    api_key = os.getenv("QIANWEN_API_KEY", '')
     workflow = TravelPlannerWorkflow(api_key)
     
     # Example question

@@ -210,8 +210,8 @@ def main():
     Example usage combining travel planner and route planner
     """
     # API keys (replace with your actual keys)
-    qianwen_api_key = os.getenv("QIANWEN_API_KEY", 'sk-3ca7afbf217f4f7aa53983cd9544ff24')
-    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_KEY", 'AIzaSyAR4vxumJy87gaZF25lt8xCTxU500YGJi0')
+    qianwen_api_key = os.getenv("QIANWEN_API_KEY", 'sk-')
+    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_KEY", '')
     
     try:
         # Step 1: Get locations from travel planner
